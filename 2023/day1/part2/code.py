@@ -13,8 +13,6 @@ replaces = {
     "nine": "n9ine",
 }
 
-replace_pattern = re.compile("|".join(re.escape(key) for key in replaces.keys()))
-
 text = ""
 for line in data:
     for key, value in replaces.items():
