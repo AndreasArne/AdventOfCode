@@ -1,5 +1,3 @@
-import re
-
 MAX_COLORS = {
     "red": 12,
     "green": 13,

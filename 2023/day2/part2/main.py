@@ -1,6 +1,7 @@
 from functools import reduce
 
-multiply_all = lambda lst: reduce(lambda x, y: int(x) * int(y), lst, 1)
+def multiply_all(lst):
+    return reduce(lambda x, y: int(x) * int(y), lst, 1)
 
 with open("data.txt") as fd:
     data = fd.read()

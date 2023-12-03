@@ -6,7 +6,7 @@ LEN = 141
 
 def is_symbol(index, data):
     try:
-        return not data[index] in ".\n" and not data[index].isdigit()
+        return data[index] not in ".\n" and not data[index].isdigit()
     except IndexError:
         pass
     return False
